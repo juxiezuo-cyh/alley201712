@@ -1,0 +1,373 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<meta charset=UTF-8 "utf-8"/>
+	<title>胡同里的京味儿</title>
+	<meta name="description" content="" />
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport"
+	/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link href="./images/btn/loadingty.png" rel="shortcut icon">
+	<link rel="stylesheet" href="./css/main.css?v=1.323212" />
+	<script type="text/javascript">
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					docEl.style.fontSize = 100 * (clientWidth / 640) + 'px'
+				};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false)
+		})(document, window);
+	</script>
+</head>
+
+<body>
+	<div class="loading_bg" id="loading_bg">
+		<div class="loading_logo">
+			<div class="imgbox  loading-anm">
+				 <!-- <img src="./images/preload/logo1.png" />   -->
+			</div>
+		</div>
+		<div class="loading_text" id="loading_text">已加载 0 %</div>
+	</div>
+	<div id="main">
+		<div id="bg"></div>
+		<div id="three"></div>
+	</div>
+	<audio id="bgm" src="./music/641012099/bgm.mp3" loop preload></audio>
+	<div class="qp_video" id="qp_video">
+		<div class="close">
+			<a href="javascript:;" class="btn_close"></a>
+		</div>
+		<div id="mod_player" class="mod_player"></div>
+	</div>
+	<div class="music pause"></div>
+
+	<!-- 百花深处 -->
+	<div class="layer_s1" id="layer_qdp">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_qdp">
+					<p>
+						<img src="./images/layer/baihua.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 黄包车 -->
+	<div class="layer_s1" id="layer_rqly">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_rqly">
+					<p>
+						<img src="./images/layer/huangbaoche.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--北京到底有多少条胡同 -->
+	<div class="layer_s1" id="layer_lfx">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_lfx">
+					<p>
+						<img src="./images/layer/hutong1_text.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 胡同之最 -->
+	<div class="layer_s1" id="layer_wd">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_wd">
+					<p>
+						<img src="./images/layer/hutongzhizui.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 模范书局 -->
+	<div class="layer_s1" id="layer_zgl">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_zgl">
+					<p>
+						<img src="./images/layer/mofanshuju.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 青云阁 -->
+	<div class="layer_s1" id="layer_tp">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_tp">
+					<p>
+						<img src="./images/layer/qingyunge.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 瑞蚨祥 -->
+	<div class="layer_s1" id="layer_wjy">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_wjy">
+					<p>
+						<img src="./images/layer/ruifuxiang.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 铁狮子 -->
+	<div class="layer_s1" id="layer_fyl">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_fyl">
+					<p>
+						<img src="./images/layer/tieshizi.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 杨梅竹斜街 -->
+	<div class="layer_s1" id="layer_zjk">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_zjk">
+					<p>
+						<img src="./images/layer/ymzxiejie.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 悦宾 -->
+	<div class="layer_s1" id="layer_wa_fyl">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_wa_fyl">
+					<p>
+						<img src="./images/layer/yuebin.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 砖塔胡同 -->
+	<div class="layer_s1" id="layer_wa_zjk">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_wa_zjk">
+					<p>
+						<img src="./images/layer/ztht.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 小吃 -->
+	<div class="layer_s1" id="layer_wa_wjy">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_wa_wjy">
+					<p>
+						<img src="./images/layer/xiaochi.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 冰糖葫芦 -->
+	<div class="layer_s1" id="layer_wa_jqay">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt vertical_wa_jqay">
+					<p>
+						<img src="./images/layer/bthl.png" />
+					</p>
+				</div>
+				<div class="tips_xiala">
+					<span class="floating-arrow"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="layer_s2" id="layer_wa_wjy">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt">
+					<p><a href="javascript:;">
+						<img src="./images/layer/wenan_wjy.png" />
+					</a>
+				</p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- <div class="layer_s2" id="layer_wa_jqay">
+		<div class="box">
+			<a href="javascript:;" class="btn_close"></a>
+			<div class="jz_top"></div>
+			<div class="jz_bottom"></div>
+			<div class="content">
+				<div class="txt">
+					<p>
+						<a href="javascript:;">
+							<img src="./images/layer/wenan_jqay.png" />
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<script type="text/javascript" src="./js/imagesloaded.js"></script>
+	<script type="text/javascript" src="./js/common.js?v=1.7"></script>
+	<script type="text/javascript " src="./js/jweixin-1.0.0.js "></script>
+	<script type="text/javascript" src="./js/index.js?r=1.916"></script>
+	<script>
+		$(function () {
+			$.ajax({
+				type: "get",
+				async: true,
+				url: "http://partner.qianlong.com/chart/api/cshare",
+				dataType: "jsonp",
+				data: {
+					"weburl": location.href.split("#")[0]
+				},
+				success: function (json) {
+					wx.config({
+						debug: false,
+						appId: json.appId,
+						timestamp: json.timestamp,
+						nonceStr: json.nonceStr,
+						signature: json.signature,
+						jsApiList: ['onMenuShareAppMessage', 'onMenuShareTimeline', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
+					});
+				},
+				error: function () {
+					console.log("share error");
+				}
+			});
+			wx.ready(function () {
+				var obj_co = {
+					title: "胡同里的京味儿",
+					link: location.href.split("#")[0],
+					imgUrl: "http://comic.qianlong.com/zt/alley/images/share.jpg",
+					success: function () {
+						console.log("share successfully");
+					},
+					cancel: function () { }
+				},
+					obj_co_desc = {
+						desc: "穿行在北京的胡同里，感受着上百年的历史在这里留下的烙印，聆听着每一段传奇的京城故事，胡同里的京味儿只待你一点点的去品味了。"
+					},
+					obj_timeline = $.extend({}, obj_co),
+					obj_appmsg = $.extend({}, obj_co_desc, obj_co),
+					obj_qq = $.extend({}, obj_co_desc, obj_co),
+					obj_wb = $.extend({}, obj_co_desc, obj_co),
+					obj_qzone = $.extend({}, obj_co_desc, obj_co);
+
+				wx.onMenuShareTimeline(obj_timeline);
+				wx.onMenuShareAppMessage(obj_appmsg);
+				wx.onMenuShareQQ(obj_qq);
+				wx.onMenuShareWeibo(obj_wb);
+				wx.onMenuShareQZone(obj_qzone);
+			});
+		})
+	</script>
+</body>
+
+</html>
